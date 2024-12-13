@@ -1,0 +1,6 @@
+DITTO_NSEC="nsec1g9vn0cxm3nt0nvlukzd03wuj0l9ll6a8pfl6v6665annd76pkt3sy4t0gy"
+LOCAL_DOMAIN="https://nostr.great.domain:4036"
+DATABASE_URL="postgres://ditto:ditto@db:5432/ditto"
+DITTO_UPLOADER="nostrbuild"
+NOSTRBUILD_ENDPOINT="https://nostr.build/api/v2/upload/files"
+VAPID_PRIVATE_KEY="MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg8nW22o9u/VNIGYMHkNKc++2klSXlMgo3QlEFBysC1eqhRANCAATArpjUISS2GZ7inJs9lNDyg50mxOX/Uoz1v0mJe8DOCPAWP3aKk3fyyKD3qfSfc/gG1dKGuREhPiyQeXiUAnQF"
