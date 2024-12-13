@@ -1,0 +1,24 @@
+services:
+
+  ditto:
+    image: openmtx/ditto:latest
+    container_name: ditto
+    init: true
+    restart: always
+    volumes:
+      - ./ditto-env:/app/.env
+    ports:
+      - "127.0.0.1:4036:4036"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: postgres
+    restart: always
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ditto
+      POSTGRES_USER: ditto
+      POSTGRES_PASSWORD: ditto
